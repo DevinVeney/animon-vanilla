@@ -1,0 +1,154 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* NavBar Styles */
+.navbar {
+  background-color: #dc3545;
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dc3545;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.disabled {
+  color: #ccc;
+}
+
+/* Banner Styles */
+.banner {
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.button-banner {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button-banner:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Listing Styles */
+.listing-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.listing {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.listing img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.listing h4 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.listing p {
+  color: #666;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #dc3545;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+}
