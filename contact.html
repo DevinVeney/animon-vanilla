@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AniMon</title>
+    <title>Contact - AniMon</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- NavBar Section -->
+    <!-- Header -->
     <nav class="navbar">
       <div class="container">
         <h1 class="logo">AniMon</h1>
@@ -36,45 +36,39 @@
       </div>
     </nav>
 
-    <!-- Banner Section -->
-    <div class="banner">
-      <img
-        src="./assets/tanjiro-wp.png"
-        alt="Banner Image"
-        class="banner-image"
-      />
-      <div class="banner-overlay">
-        <h1 class="banner-title">Read Manga Online For Free.</h1>
-        <a href="#" class="button-banner">GO TO HOMEPAGE -></a>
-      </div>
-    </div>
+    <!-- Main Content -->
+    <main>
+      <section class="contact-section">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
-    <!-- Popular Listings Section -->
-    <div class="container">
-      <h2>Check out our listings!</h2>
-      <div class="listing-wrapper">
-        <div class="listing">
-          <img src="./assets/solo-leveling1.jpg" alt="Listing Image" />
-          <h4>Title 1</h4>
-          <p>Description 1</p>
-        </div>
-        <div class="listing">
-          <img src="./assets/onepiece1.jpg" alt="Listing Image" />
-          <h4>Title 2</h4>
-          <p>Description 2</p>
-        </div>
-        <div class="listing">
-          <img src="./assets/naruto1.jpg" alt="Listing Image" />
-          <h4>Title 3</h4>
-          <p>Description 3</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
       <div class="container">
-        <p class="footer-text">Copyright &copy; AniMon 2024</p>
+        <p>&copy; AniMon 2024</p>
       </div>
     </footer>
   </body>
