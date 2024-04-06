@@ -3,10 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+.black {
+  color: black;
+}
 
+p {
+  color: white;
+}
+h2 {
+  color: white;
+}
 body {
   font-family: Arial, sans-serif;
-  background-color: white;
+  background-color: black;
 }
 
 .container {
@@ -252,4 +261,69 @@ nav ul li a.active {
 .image-size-400x300 {
   width: 400px;
   height: 300px;
+}
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.image-size-400x300 {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  object-position: center;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 24px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #3e8e41;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
