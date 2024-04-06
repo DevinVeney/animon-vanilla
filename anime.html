@@ -7,19 +7,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
+    <nav class="navbar">
       <div class="container">
-        <h1>AniMon</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </nav>
+        <h1 class="logo">AniMon</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="anime.html">Anime</a>
+              <a href="manga.html">Manga</a>
+            </div>
+          </li>
+        </ul>
+        <form class="search-form" role="search">
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="search-btn" type="submit">Search</button>
+        </form>
       </div>
-    </header>
+    </nav>
 
     <!-- Main Content -->
     <main>
@@ -28,8 +42,11 @@
           <h2>Popular Anime Series</h2>
           <div class="anime-list">
             <div class="anime-item">
-              <img src="./assets/onepiece2.png" alt="Anime 1"
-              class="image-size-400x300/>
+              <img
+                src="./assets/onepiece2.png"
+                alt="Anime 1"
+                class="image-size-400x300"
+              />
               <h3>One Piece</h3>
               <p>
                 One Piece is a popular manga and anime series created by
@@ -42,8 +59,11 @@
               <a href="links.html" class="button">Read More</a>
             </div>
             <div class="anime-item">
-              <img src="./assets/myhero.png" alt="Anime 2"
-              class="image-size-400x300/>
+              <img
+                src="./assets/myhero.png"
+                alt="Anime 2"
+                class="image-size-400x300"
+              />
               <h3>My Hero Academia</h3>
               <p>
                 My Hero Academia is not just about becoming a hero. It's about

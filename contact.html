@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header -->
     <nav class="navbar">
       <div class="container">
         <h1 class="logo">AniMon</h1>
@@ -24,12 +23,17 @@
             </div>
           </li>
         </ul>
-        <form class="search-form" role="search">
+        <form action="https://lujweb.com/thisone.php" method="post">
           <input
-            class="search-input"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
+            type="hidden"
+            name="recipient"
+            value="poza@japan.lakeland.edu"
+          />
+          <input type="hidden" name="subject" value="Here Is the Form Data" />
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://lujweb.com/thanks/"
           />
           <button class="search-btn" type="submit">Search</button>
         </form>

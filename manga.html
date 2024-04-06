@@ -7,20 +7,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
+    <nav class="navbar">
       <div class="container">
-        <h1>AniMon</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">News</a></li>
-          </ul>
-        </nav>
+        <h1 class="logo">AniMon</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="anime.html">Anime</a>
+              <a href="manga.html">Manga</a>
+            </div>
+          </li>
+        </ul>
+        <form class="search-form" role="search">
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="search-btn" type="submit">Search</button>
+        </form>
       </div>
-    </header>
+    </nav>
 
     <!-- Main Content -->
     <main>
@@ -29,17 +42,31 @@
           <h2>Popular Manga Series</h2>
           <div class="manga-list">
             <div class="manga-item">
-              <img src="./assets/manga1.jpg" alt="Manga 1"
-              class="image-size-400x300/>
-              <h3>Manga Title 1</h3>
-              <p>Description of Manga 1</p>
+              <img
+                src="./assets/naruto1.jpg"
+                alt="Manga 1"
+                class="image-size-400x300"
+              />
+              <h3>Naruto</h3>
+              <p>
+                Naruto Uzumaki is a young ninja from the Hidden Leaf Village who
+                dreams of becoming the Hokage, the leader of his village.
+                However, he lacks ambition.
+              </p>
               <a href="links.html" class="button">Read More</a>
             </div>
             <div class="manga-item">
-              <img src="./assets/manga2.jpg" alt="Manga 2"
-              class="image-size-400x300/>
-              <h3>Manga Title 2</h3>
-              <p>Description of Manga 2</p>
+              <img
+                src="./assets/myhero.png"
+                alt="My Hero Academia"
+                class="image-size-400x300"
+              />
+              <h3>My Hero Academia</h3>
+              <p>
+                In My Hero Academia, high school student Izuku Midoriya
+                transforms into the hero known as All Might after being injured
+                in an accident and given superhuman abilities.
+              </p>
               <a href="links.html" class="button">Read More</a>
             </div>
             <!-- Add more manga items as needed -->
